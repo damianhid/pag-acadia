@@ -1,0 +1,308 @@
+*{
+    margin: 10px ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/*-----------------------------btn whats--------------------------*/
+.btn_wthas{
+    display: flex;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: rgb(30, 244, 30);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 41px;
+    color: white;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 0px 2px 20px rgb(11, 207, 11);
+    animation: efecto 1.2s infinite;
+}
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(18, 253, 34, 0.733);
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.06);
+    }
+}
+.btn_wthas:hover{
+    width: 65px;
+    height: 65px;
+    font-size: 48px;
+}
+/*.btn_wthas:hover{
+    color: rgb(30, 244, 30);;
+    background: white;
+}
+*/
+
+html {
+    margin: 0px ;
+    padding: 0px;
+}
+body{
+    margin: 0px ;
+    padding: 0px;
+    padding-top: 86px;
+    background-color: #0066fe;
+}
+main{
+    background-color: #0066fe;
+    margin: 0px ;
+    padding: 2px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+/*----------------------------cabecera----------------------------*/
+    .cabeza{
+        position: fixed;
+        height: 79px;
+        display: flex;
+        left: -4px;
+        top: -5px;
+        width: 99%;
+        flex-flow: row ;
+        border-radius: 5px;
+        background-color: #ffffffaa;
+        justify-content: space-around; 
+        padding: 0 90px 0 2%;
+
+    }
+        .cabeza a{
+            display: inline-block;
+            color : rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: rgba(37, 37, 37, 0.468);
+            margin: auto;
+            text-align: center;
+            border-radius: 5px;
+            width: 13%;
+            height: 55px;
+            padding: 14px 0px 0px 0px;
+            font-size: 20px;
+        }
+        .cabeza a:hover{
+            color : rgb(0, 0, 0);
+            background-color: rgba(255, 247, 247, 0.845);
+        }
+            .cabeza a i{
+                display: inline;
+                padding: 0px 0px ;
+                margin: 0px 7px;
+            }
+        .logo{
+            display: flex;
+            width: 215px;
+            align-self: flex-start;
+            padding: 0px;
+            margin: 0px;
+        }
+        .logo_min{
+            display: none;
+        }
+        .nav-boton{
+            display: none;
+            background: rgb(155, 155, 155);
+            color: #fff;
+            margin: 5px;
+            border: 2px solid #fff;  
+        }
+/*-------------------------------anuncio--------------------*/
+       .contenedor-slider{
+            background: url(imagenes/tablero1.jpg);
+            
+            padding: 0;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            border: 10px solid black;
+            border-radius: 21px;
+       }
+       .slider{ 
+            padding: 0;
+            display: flex;
+            align-items: center;
+            height: 510px;
+            width: 300%;
+            margin: auto;
+            margin-left: -100%;
+            background: rgba(255, 72, 72, 0);
+       }
+       .slider-secction{
+            background: rgba(0, 0, 255, 0);
+            width: 1000px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+       }
+       .slider-img{
+            padding: auto;
+            padding-top: 0px;
+            box-shadow: 0 0 0 0px rgb(0, 0, 0),
+                        0 0px 50px;
+            display: block;
+            align-items: center;
+            margin: auto;
+            margin-top: 0px;
+            width: auto;
+            height: 100%;
+            max-height: 510px;
+            /*max-width: 1100px;*/
+            object-fit: cover;
+       }
+       .slider-btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: rgba(74, 74, 223, 0.568);
+        top: 55%;
+        
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+       }
+       .slider-btn:hover {
+            width: 45px;
+            height: 45px;
+            background: rgba(99, 99, 99, 0.813);
+        }
+       .slider-btn-right{
+        padding: 0px 0px 0px 3px;
+        right: 15px;
+        border-radius: 20px 3px 3px 20px ;
+       }
+       .slider-btn-left{
+        padding: 0px 0px 0px 0px;
+        border-radius: 3px 20px 20px 3px;
+        left: 15px;
+    }
+ /*---------------------nosotros-----------------*/
+    .cont-part{
+        display: inline;
+        background-color: azure;
+       
+        padding: 0 0 0 0 ;
+            
+    }
+
+            .nosotros{
+                background: rgb(255, 1, 1);
+                
+                display: flex;
+                height: 500px;
+                width: 98%;
+            }   
+                .nosotros-info{
+                    display: block;
+                    background: rgba(141, 255, 42, 0.979);
+                    width: 70%;
+                    height: 120px;
+                }
+                    .nosotros-info h2,.nosotros-info p{
+                        color: #0066fe;
+                        text-align: center;
+                    }
+
+                .img-abajo{
+                    width: 20px;
+                    height: 20px;
+                    background: rgb(0, 242, 255);
+                }
+                .img-lado{
+                    /*background: url(imagenes/valente2.png);*/
+                    background-color: rgb(90, 255, 90);
+                    width: auto;
+                    height: 400px;
+                    margin: 50px;
+                    padding: 5px;
+
+                }
+
+
+
+
+    section{
+        background-color:rgba(7, 26, 31, 0.774);
+    }
+
+        section article{
+            background-color: aqua;
+        }
+    footer{
+        background-color: blueviolet;
+    }
+        footer nav{
+            background-color: coral;
+        }
+ /*----------------------media 1---------------------*/ 
+    @media (max-width: 925px) {
+        body{
+            padding-top: 85px;
+        }
+        .logo{
+            display: none;
+        }
+        .logo_min{
+            display: flex;
+            width: 85px;
+            height: auto;
+            padding: 0px;
+            margin: 0px;
+        }
+        .cabeza{
+            padding:  0px 20px 0px 0px;
+            height: 75px;
+            width: 98%;
+            
+        }
+        .cabeza a{
+            font-size: 15px;
+            padding: 15px 0px 9px 0px;
+            width: 15%;
+        }
+    }
+ /*----------------------media 2---------------------*/   
+    @media (max-width: 595px) {
+        .cabeza{
+            padding: 0;
+            display: flex;
+            height: 75px;
+        }
+        .cabeza a{
+            display: none;
+            
+            
+        }
+        .logo_min{
+            display: none;
+            width: 70px;
+            height: auto;
+            padding: 0px;
+            margin: 0px;
+        }
+        .logo{
+            display: flex;
+            width: 200px;
+           
+            padding: 0px;
+            margin: 0px;
+        }
+        .nav-boton {
+            display: flex;
+            background: salmon;
+            color: #fff;
+            padding: 20px 40px 20px 40px;
+            
+            border-radius: 5px;
+           
+        }
+
+    }
