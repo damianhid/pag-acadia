@@ -115,7 +115,7 @@ main{
         }
 /*-------------------------------anuncio--------------------*/
        .contenedor-slider{
-            background: url(imagenes/Tablero1.jpg);
+            background: url(Tablero1.jpg);
             
             padding: 0;
             width: 100%;
