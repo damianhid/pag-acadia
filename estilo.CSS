@@ -193,7 +193,7 @@ main{
  /*---------------------nosotros-----------------*/
     .cont-part{
         display: inline;
-        background-image:  url(Imagenes/Fondo1.jpg);
+        background-image:  url(Fondo1.jpg);
         /*background-color: rgba(240, 255, 255, 0.525);*/
         padding: 0;       
     }
