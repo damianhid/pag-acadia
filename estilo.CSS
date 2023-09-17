@@ -55,7 +55,7 @@ body{
 main{
     background-color: #0066fe;
     margin: 0px ;
-    padding: 2px;
+    padding: 0px;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -69,12 +69,17 @@ main{
         width: 99%;
         flex-flow: row ;
         border-radius: 5px;
-        background-color: #ffffffaa;
+        background-color: #ffffffc9;
         justify-content: space-around; 
-        padding: 0 90px 0 2%;
-
+        padding: 0 5% 0 2%;
     }
-        .cabeza a{
+        .enlaces{ 
+            display: flex;
+            width: 80%;
+            margin: 0;
+            padding: auto;
+        }
+        .enlaces a{
             display: inline-block;
             color : rgb(255, 255, 255);
             text-decoration: none;
@@ -82,10 +87,11 @@ main{
             margin: auto;
             text-align: center;
             border-radius: 5px;
-            width: 13%;
+            width: 17%;
+            min-width: 200px;
             height: 55px;
             padding: 14px 0px 0px 0px;
-            font-size: 20px;
+            font-size: 19px;
         }
         .cabeza a:hover{
             color : rgb(0, 0, 0);
@@ -96,26 +102,26 @@ main{
                 padding: 0px 0px ;
                 margin: 0px 7px;
             }
-        .logo{
-            display: flex;
-            width: 215px;
-            align-self: flex-start;
-            padding: 0px;
-            margin: 0px;
-        }
-        .logo_min{
-            display: none;
-        }
+        .logos{
+                margin: 0;
+                padding: 0;
+            }
+            .logo{
+                display: flex;
+                width: 215px;
+                align-self: flex-start;
+                padding: 0px;
+                margin: 0px;
+            }
+            .logo_min, .img-abajo-flex{
+                display: none;
+            }
         .nav-boton{
-            display: none;
-            background: rgb(155, 155, 155);
-            color: #fff;
-            margin: 5px;
-            border: 2px solid #fff;  
+         display: none;  
         }
 /*-------------------------------anuncio--------------------*/
        .contenedor-slider{
-            background: url(Tablero1.jpg);
+            background: url(imagenes/Tablero1.jpg);
             
             padding: 0;
             width: 100%;
@@ -187,8 +193,16 @@ main{
  /*---------------------nosotros-----------------*/
     .cont-part{
         display: inline;
-        background-color: rgba(240, 255, 255, 0.525);
+        background-image:  url(Imagenes/Fondo1.jpg);
+        /*background-color: rgba(240, 255, 255, 0.525);*/
         padding: 0;       
+    }
+    .nosotros-flex{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        
     }
             .nosotros{
                 display: flex;
@@ -197,9 +211,10 @@ main{
                 width: 100%;
                 margin: 0;
                 padding: 0;
-                background:  url(Fondo1.jpg);
-                /*background: rgb(255, 99, 99);*/
-            }   
+                /*background-image:  url(Imagenes/Fondo1.jpg);
+                background: rgb(255, 99, 99);*/
+                
+            } 
                 .nosotros-info{
                     display: flex;
                     flex-direction: column;
@@ -221,43 +236,34 @@ main{
                     .nosotros-info h2{
                         font-size: 30px;
                         text-align: center;
-                        
                         margin: 0;
                     }
                     .nosotros-info p{
                         text-align: center;
-                        
                         font-size: 20px;
                         padding: 30px;
                         margin: 0;
                     }
-
                 .img-abajo{
                     margin: auto;
                     padding: 0;
-                   
                     display: flex;
                     width: auto;
                     height: 25%;
                     justify-content: center;
-                   
-                    
                 }
                     .img-abajo img{
                         padding: 0;
                         margin: 0;
                         width: 100%;
                         height: 100%;
-                        
                     }
                 .img-lado{
-                    /*background: url(Valente2.png);*/
-                    
+                    /*background: url(imagenes/Valente2.png);*/
                     width: auto;
                     height: 100%;
                     margin: 0;
                     padding: 6px;
-
                 }   
                     .img-lado img{
                         height: 100%;
@@ -266,15 +272,19 @@ main{
                         padding: 0;
                         border-radius: 4px;
                     }
+        .ajedrez{
+            height: 500px;
+            background-color: #0066fe3c;
+        }
 
-
-
-
-    section{
-        background-color:rgba(7, 26, 31, 0.774);
-    }
-
-
+        .talleres{
+            height: 500px;
+            background-color: #0066fe3c;
+        }
+        .noticias{
+            height: 500px;
+            background-color: #0066fe3c;
+        }
     footer{
         background-color: blueviolet;
     }
@@ -291,8 +301,8 @@ main{
         }
         .logo_min{
             display: flex;
-            width: 85px;
-            height: auto;
+            width: auto;
+            height: 75px;
             padding: 0px;
             margin: 0px;
         }
@@ -306,42 +316,209 @@ main{
             font-size: 15px;
             padding: 15px 0px 9px 0px;
             width: 15%;
+            min-width: 83px;
         }
+        /*-----------------------------nosogtros-------------*/
+        
+        .nosotros{
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }   
+        .nosotros-flex{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+        }
+        .nosotros-text{
+            background-color: #0066fe;
+        }
+        .nosotros-info h2{
+            font-size: 20px;
+            text-align: center;
+            margin: 0px;
+            padding-bottom:6px;
+        }
+        .nosotros-info h2 i{
+            margin: 0px;
+            padding: 0;
+        }
+        .nosotros-info p{
+            text-align: center;
+            font-size: 14px;
+            padding: 2px;
+            margin: 0;
+        }
+        .img-lado{
+            /*background: url(imagenes/Valente2.png);*/
+            display: flex;
+            margin-top: 15px;
+            margin-right: 5px;
+           
+            height: auto;
+            width: 30%;
+            padding: 0px;
+            background-color: #0066fe;
+            }  
+            .img-lado img{
+    
+                display: flex;
+                width: 100%;
+                height: auto;
+                margin: auto;
+                
+    
+            }
     }
  /*----------------------media 2---------------------*/   
     @media (max-width: 595px) {
         .cabeza{
             padding: 0;
-            display: flex;
             height: 75px;
         }
-        .cabeza a{
-            display: none;
-            
-            
+        .enlaces{
+           flex-direction: column;
+           width: 50%;
+           align-items: center;
         }
+
         .logo_min{
             display: none;
-            width: 70px;
-            height: auto;
-            padding: 0px;
-            margin: 0px;
         }
         .logo{
             display: flex;
             width: 200px;
-           
-            padding: 0px;
-            margin: 0px;
         }
         .nav-boton {
-            display: flex;
-            background: salmon;
-            color: #fff;
-            padding: 20px 40px 20px 40px;
-            
+            display: block;
+            color : rgb(0, 0, 0);
+            background-color: rgba(175, 175, 175, 0.751);
+            font-size: large;
+            width: 50%;
+            min-width: 90px;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 14px 16px;
+            border-radius: 6px;
+            border-color: rgba(255, 247, 247, 0.751);
+        }
+        .nav-boton:hover{
+            background-color: rgba(37, 37, 37, 0.468);
+            color: white;
+        }
+        .enlaces .nav-enlace{
+            margin-bottom: 10px;
+            width: 45%;
+            padding: 15px 15px 15px 5px;
+            background-color: rgba(37, 37, 37, 0.635);
+        }
+        .enlaces .desaparece{
+            display: none;
+        }
+/*--------------------------slider----------------------*/
+        .slider-img{
+            margin: auto;
+            margin-top: 0px;
+            height: auto;
+            width: 100%;
+       }
+/*--------------------------nosotros----------------------*/
+.cont-part{
+    margin: 0;
+}
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}   
+.nosotros-flex{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+    .nosotros-info{
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.463);
+        width: 75%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+        .nosotros-text{
+            background: rgba(211, 211, 255, 0.788);
+            margin-top: 15px;
+            padding: 0px;
+            height: 95%;
+            width: 95%;
             border-radius: 5px;
-           
+        }
+            .nosotros-info h2{
+                font-size: 20px;
+                text-align: center;
+                margin: 0px;
+                padding-bottom:6px;
+            }
+            .nosotros-info h2 i{
+                margin: 0px;
+                padding: 0;
+            }
+            .nosotros-info p{
+                text-align: center;
+                font-size: 14px;
+                padding: 2px;
+                margin: 0;
+            }
+            .img-abajo{
+                display: none;
+            }
+            .img-abajo-flex{
+                
+                display: flex;
+                width: 100%;
+                margin: 0;
+                padding: auto;
+            }
+            .img-abajo-flex img{
+                width: 100%;
+                margin: 0;
+                padding: 0%;
+            }
+
+            .mas-text{ 
+                margin: 0;
+                padding: 0;
+                display: none;
+            }
+
+    .img-lado{
+        /*background: url(imagenes/Valente2.png);*/
+        display: flex;
+        margin-top: 15px;
+        margin-right: 5px;
+       
+        height: auto;
+        width: 30%;
+        padding: 0px;
+        background-color: #0066fe;
+        }  
+        .img-lado img{
+
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            
+
         }
 
     }
